@@ -1,0 +1,38 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+}
+
+.nav .logo {
+  color: #2e2929;
+}
+
+.nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 50%;
+  font-weight: bold;
+}
+
+.nav .links a {
+  color: #2e2929;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    position: fixed;
+    width: -webkit-fill-available;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

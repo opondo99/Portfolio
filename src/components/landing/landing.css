@@ -1,0 +1,79 @@
+.landing {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: bold;
+  font-size: large;
+  padding: 30px;
+}
+
+.landing .profile {
+  display: block;
+  min-width: 30%;
+  background-position: inherit;
+  min-height: initial;
+  background-image: url("../images/profilepic1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.landing .intro {
+  display: block;
+  width: 50%;
+  margin: auto;
+  color: #2c2828;
+  line-height: 2rem;
+  top: 10rem;
+  left: 20rem;
+  text-align: right;
+}
+
+.landing .intro p strong, .landing .intro p h1 {
+  font-size: x-large;
+  font-weight: bolder;
+  color: #cbd6df;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing {
+    min-height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .landing .profile {
+    display: block;
+    min-width: 45%;
+    min-height: 55vh;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    background-position: inherit;
+    background-image: url("../images/profilepic1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .landing .intro {
+    display: block;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: #b3a2a2;
+    line-height: 2rem;
+  }
+  .landing .intro p strong, .landing .intro p h1 {
+    font-size: x-large;
+    font-weight: bolder;
+    color: #1b1f22;
+  }
+}
+/*# sourceMappingURL=landing.css.map */
