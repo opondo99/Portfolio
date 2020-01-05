@@ -6,7 +6,7 @@ const Projects = () => {
         <div>
             <h1 className="Title"> Projects</h1>
             <div className="projects">
-                <div className="card">
+                <div className="card first">
                     <div className="demo"></div>
                     <div className="description">
                         <p>
@@ -21,7 +21,7 @@ const Projects = () => {
                         <li>Git Hub</li>
                     </ul>
                 </div>
-                <div className="card 1">
+                <div className="card second">
                     <div className="demo"></div>
                     <div className="description">
                         <p>
@@ -37,7 +37,7 @@ const Projects = () => {
                     </ul>
                 </div>
 
-                <div className="card">
+                <div className="card third">
                     <div className="demo"></div>
                     <div className="description">
                         <p>

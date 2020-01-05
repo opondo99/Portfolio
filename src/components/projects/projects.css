@@ -1,3 +1,12 @@
+.Title {
+  display: block;
+  min-width: 100%;
+  min-height: 10vh;
+  font-family: cursive;
+  font-size: xx-large;
+  color: #2e2929;
+}
+
 .projects {
   padding: 5px;
   margin: 0;
@@ -7,11 +16,7 @@
       grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   grid-gap: 1rem;
   max-width: 100vw;
-}
-
-.projects .Title {
-  display: block;
-  min-width: 100%;
+  line-height: 25px;
 }
 
 .projects .card {
@@ -23,8 +28,21 @@
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 55vh;
-  width: 70%;
+  width: 80%;
   margin: auto;
+  -webkit-box-shadow: 0px 0px 26px -1px #523352;
+  box-shadow: 0px 0px 26px -1px #523352;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.projects .card .demo {
+  min-height: 30vh;
+  min-width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.projects .card .description {
+  padding: 10px;
 }
 
 .projects .card .call-to-action {
@@ -40,10 +58,26 @@
 .projects .card .call-to-action li {
   display: block;
   list-style: none;
-  min-width: 40%;
+  min-width: 35%;
   color: #d3c0c0;
   background-color: #1d1b1b;
-  margin: 8px;
-  padding: 8px;
+  margin: 8px auto 8px auto;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.first .demo {
+  background-image: url("../images/project1.jpg");
+  background-size: cover;
+}
+
+.second .demo {
+  background-image: url("../images/project2.jpg");
+  background-size: cover;
+}
+
+.third .demo {
+  background-image: url("../images/project3.jpg");
+  background-size: cover;
 }
 /*# sourceMappingURL=projects.css.map */

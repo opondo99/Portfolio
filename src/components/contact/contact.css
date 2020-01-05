@@ -1,1 +1,116 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+.contact {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'left mailing';
+  min-height: 92vh;
+}
+
+.contact .left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
+  width: 80%;
+  margin: auto;
+  text-align: start;
+  border-right: 1px solid;
+  min-height: 80%;
+}
+
+.contact .left .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0;
+}
+
+.contact .left .social h1 {
+  color: #1d1a1a;
+}
+
+.contact .left .social a {
+  display: block;
+  min-width: 10vw;
+  min-height: 2vh;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #cebcbc;
+}
+
+.contact .mailing {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: mailing;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  min-height: 80%;
+  margin: auto;
+  background-color: #f3ece2;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 26px -1px #523352;
+  box-shadow: 0px 0px 26px -1px #523352;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.contact .mailing h1 {
+  min-height: 10vh;
+  padding: 10% 10%;
+}
+
+.contact .mailing textarea {
+  margin: 1vh 2vw;
+  padding: 2vh 2vw;
+  border-radius: 5px;
+}
+
+.contact .mailing .message {
+  min-height: 20vh;
+  max-height: 25vh;
+  overflow-y: scroll;
+}
+
+.contact .mailing .button {
+  width: 20%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: yellowgreen;
+  border: none;
+  min-height: 4vh;
+  border-radius: 5px;
+  margin: 2vh 2vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .mailing {
+    min-height: 70vh;
+    margin: 7vh auto;
+  }
+  .contact .left {
+    min-height: 50vh;
+    margin: auto;
+    border: none;
+  }
+  .contact .left .location p {
+    padding: 2vh 0;
+    color: white;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
