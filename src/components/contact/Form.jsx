@@ -69,7 +69,13 @@ class ContactForm extends Component {
     handleSubmit(event) {
         const templateId = 'template_IYLcv5p7';
 
-        this.sendFeedback(templateId, {message_html: this.state.feedback, from_name: this.state.name, reply_to: this.state.email })
+        this.sendFeedback(
+            templateId,{
+                message_html: this.state.feedback,
+                from_name: this.state.name,
+                reply_to: this.state.email
+            }
+        )
     }
 
     sendFeedback (templateId, variables) {
