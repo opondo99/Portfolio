@@ -17,6 +17,18 @@
   color: #2e2929;
 }
 
+.nav .burger {
+  display: none;
+}
+
+.nav .burger .line {
+  background: #2e2929;
+  min-height: 0.3rem;
+  min-width: 35px;
+  margin: 0.3rem;
+  border-radius: 5px;
+}
+
 .nav .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +49,34 @@
     position: fixed;
     background-color: #ff8939 77%;
     width: -webkit-fill-available;
+  }
+  .nav .burger {
+    display: block;
+  }
+  .nav .phoneview {
+    min-height: 92vh;
+    min-width: 60vw;
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    background: #ff8939 77%;
+  }
+  .nav .phoneview .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 92vh;
+    min-width: 60vw;
+    position: absolute;
+    top: 0vh;
+  }
+  .nav .phoneview .links a {
+    min-width: 50%;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=navbar.css.map */
