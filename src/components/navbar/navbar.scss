@@ -32,6 +32,9 @@
         font-weight: bold;
 
         a {
+            display: flex;
+            justify-content: space-around;
+            min-width: 15vw;
             color: rgb(46, 41, 41);
             text-decoration: none;
         }
@@ -45,6 +48,7 @@
         position: fixed;
         background-color: rgba(255,137,57,1) 77%;
         width: -webkit-fill-available;
+        opacity: 1;
 
         .burger{
             display: block;
@@ -62,15 +66,13 @@
                 display: flex;
                 flex-direction: column;
                 min-height: 92vh;
-                min-width: 60vw;
+                min-width: 40vw;
                 position: absolute;
                 top: 0vh;
+                margin: auto;
                 // margin: 0 25px 0 25px;
                 
-                a {
-                    min-width: 50%;
-                    margin: auto;
-                }
+                
 
             }
         }
