@@ -27,7 +27,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 55vh;
+  min-height: 70vh;
   width: 80%;
   margin: auto;
   -webkit-box-shadow: 0px 0px 26px -1px #523352;
@@ -36,13 +36,22 @@
 }
 
 .projects .card .demo {
-  min-height: 30vh;
+  min-height: 25vh;
   min-width: 100%;
   border-radius: 10px 10px 0px 0px;
 }
 
 .projects .card .description {
   padding: 10px;
+  min-height: 45vh;
+  color: #c2b5b5;
+}
+
+.projects .card .description h1 {
+  color: #222020;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: .5rem 0;
 }
 
 .projects .card .call-to-action {
@@ -60,10 +69,22 @@
   list-style: none;
   min-width: 35%;
   color: #d3c0c0;
-  background-color: #1d1b1b;
+  background: #1d1b1b;
   margin: 8px auto 8px auto;
   padding: 5px;
   border-radius: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.projects .card .call-to-action li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects .card .call-to-action li:hover {
+  background: #d8c9c9;
+  color: #252323;
 }
 
 .first .demo {
